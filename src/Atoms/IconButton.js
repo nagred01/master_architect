@@ -69,7 +69,7 @@ export class IconButton extends Component {
 
                     </View>
                      {
-                         this.props.label && 
+                         this.props.label &&
                          <View>
                         <Text style={{ textAlign:"left", fontSize: responsiveFontSize(1.5) }}>{this.props.label}
                         </Text>

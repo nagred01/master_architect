@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  View, StyleSheet,TouchableOpacity} from 'react-native';
+import {  View, StyleSheet,TouchableOpacity,Text} from 'react-native';
 import IconButton from '../Atoms/IconButton';
 import {
   responsiveFontSize, responsiveHeight,
@@ -7,7 +7,7 @@ import {
 } from 'react-native-cross-platform-responsive-dimensions';
 import AppSettings from '../Settings/AppSettings';
 import { isIphoneX } from 'react-native-iphone-x-helper';
-
+import IconIos from 'react-native-vector-icons/Ionicons';
 export default class Footer extends Component {
 
   render() {
@@ -20,8 +20,9 @@ export default class Footer extends Component {
             <IconButton color="green" label="Accounts" iconType="MaterialCommunityIcons" iconName={"account-box-multiple"} iconSize={3}> </IconButton>
           </View>
           <View style= {[styles.padding, iPhonexStyle]}>
-            <TouchableOpacity onPress={()=>{this.props.navigation.navigate("CameraScreen")}}>
-            <IconButton color="gray" label="Deposit" iconType="FontAwesome" iconName={"camera"} iconSize={3} > </IconButton>
+            <TouchableOpacity onPress={()=>{this.props.navObj.navigate("CameraScreen");console.log("click on camera =>")}}>
+            <IconIos name = "ios-camera" style={{fontSize:40,color:'gray'}}></IconIos>
+            <Text style={{fontSize:13,color:'black', marginTop: -12}}> Deposit </Text>
            </TouchableOpacity>
           </View>
           <View style= {[styles.padding, iPhonexStyle]}>

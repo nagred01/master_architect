@@ -24,28 +24,19 @@ import TouchID from 'react-native-touch-id';
 
 const opts1: ShortcutOptions = {
   activityType: "Open Account Summary",
-  title: "Say Hi",
+  title: "Say hi",
   userInfo: {
     foo: 1,
     bar: "baz",
     baz: 34.5
   },
   keywords: ["kek", "foo", "bar"],
-  persistentIdentifier: "com.github.gustash.SiriShortcutsExample.sayHello",
   isEligibleForSearch: true,
   isEligibleForPrediction: true,
   suggestedInvocationPhrase: "Say something",
   needsSave: true
 };
 
-const opts2: ShortcutOptions = {
-  activityType: "com.github.gustash.SiriShortcutsExample.somethingElse",
-  title: "Something Else",
-  persistentIdentifier: "some.persistent.identifier",
-  isEligibleForSearch: true,
-  isEligibleForPrediction: true,
-  suggestedInvocationPhrase: "What's up?"
-};
 
 type Props = {};
 type State = {
@@ -136,7 +127,7 @@ export default class AccountSummary extends Component {
       "SiriShortcutListener",
       this.handleSiriShortcut.bind(this)
     );
-    suggestShortcuts([opts1, opts2]);
+    suggestShortcuts([opts1]);
   }
 
   handleSiriShortcut({ userInfo, activityType }: any) {
@@ -151,38 +142,13 @@ export default class AccountSummary extends Component {
     donateShortcut(opts1);
   }
 
-  setupShortcut2() {
-    donateShortcut(opts2);
-  }
 
   async clearShortcut1() {
     try {
       await clearShortcutsWithIdentifiers([
-        "com.github.gustash.SiriShortcutsExample.sayHello",
         console.log("Clear ShortCut =>"),
       ]);
       alert("Cleared Shortcut 1 ");
-    } catch (e) {
-      alert("You're not running iOS 12!");
-    }
-  }
-
-  async clearShortcut2() {
-    try {
-      await clearShortcutsWithIdentifiers(["some.persistent.identifier"]);
-      alert("Cleared Shortcut 2");
-    } catch (e) {
-      alert("You're not running iOS 12!");
-    }
-  }
-
-  async clearBothShortcuts() {
-    try {
-      await clearShortcutsWithIdentifiers([
-        "com.github.gustash.SiriShortcutsExample.sayHello",
-        "some.persistent.identifier"
-      ]);
-      alert("Cleared Both Shortcuts");
     } catch (e) {
       alert("You're not running iOS 12!");
     }
@@ -256,10 +222,7 @@ export default class AccountSummary extends Component {
             }}
             shortcut={opts1}
           />
-          <TouchableOpacity onPress={()=>{this.props.navigation.navigate("CameraScreen")}}>
-          <Text style={{fontSize:15,padding:5}}>Click For Camera</Text>
-          </TouchableOpacity>
-        <Footer>
+        <Footer navObj={this.props.navigation}>
 
         </Footer>
 

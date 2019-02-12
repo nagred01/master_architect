@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Slider,CameraRoll } from 'react-native';
 // eslint-disable-next-line import/no-unresolved
 import { RNCamera } from 'react-native-camera';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { responsiveHeight } from '../../node_modules/react-native-cross-platform-responsive-dimensions';
 import IconIos from 'react-native-vector-icons/Ionicons';
 
@@ -13,30 +13,10 @@ const flashModeOrder = {
   torch: 'off',
 };
 
-const wbOrder = {
-  auto: 'sunny',
-  sunny: 'cloudy',
-  cloudy: 'shadow',
-  shadow: 'fluorescent',
-  fluorescent: 'incandescent',
-  incandescent: 'auto',
-};
 
 export default class CameraScreen extends React.Component {
   state = {
     flash: 'off',
-    zoom: 0,
-    autoFocus: 'on',
-    depth: 0,
-    type: 'back',
-    whiteBalance: 'auto',
-    ratio: '16:9',
-    recordOptions: {
-      mute: false,
-      maxDuration: 5,
-      quality: RNCamera.Constants.VideoQuality['288p'],
-    },
-    isRecording: false,
   };
 
 
@@ -44,45 +24,10 @@ export default class CameraScreen extends React.Component {
     console.log("Camera File Call =>")
   }
 
-  toggleFacing() {
-    this.setState({
-      type: this.state.type === 'back' ? 'front' : 'back',
-    });
-  }
 
   toggleFlash() {
     this.setState({
       flash: flashModeOrder[this.state.flash],
-    });
-  }
-
-  toggleWB() {
-    this.setState({
-      whiteBalance: wbOrder[this.state.whiteBalance],
-    });
-  }
-
-  toggleFocus() {
-    this.setState({
-      autoFocus: this.state.autoFocus === 'on' ? 'off' : 'on',
-    });
-  }
-
-  zoomOut() {
-    this.setState({
-      zoom: this.state.zoom - 0.1 < 0 ? 0 : this.state.zoom - 0.1,
-    });
-  }
-
-  zoomIn() {
-    this.setState({
-      zoom: this.state.zoom + 0.1 > 1 ? 1 : this.state.zoom + 0.1,
-    });
-  }
-
-  setFocusDepth(depth) {
-    this.setState({
-      depth,
     });
   }
 
@@ -108,13 +53,7 @@ export default class CameraScreen extends React.Component {
         style={{
           flex: 1,
         }}
-        type={this.state.type}
         flashMode={this.state.flash}
-        autoFocus={this.state.autoFocus}
-        zoom={this.state.zoom}
-        whiteBalance={this.state.whiteBalance}
-        ratio={this.state.ratio}
-        focusDepth={this.state.depth}
         permissionDialogTitle={'Permission to use camera'}
         permissionDialogMessage={'We need your permission to use your camera phone'}
       >
@@ -126,16 +65,16 @@ export default class CameraScreen extends React.Component {
             justifyContent: 'space-around',
           }}
         >
-           <TouchableOpacity  style={styles.flipButton} onPress={()=>{this.props.navigation.navigate("AccountSummary")}}> 
+           <TouchableOpacity  style={styles.flipButton} onPress={()=>{this.props.navigation.navigate("AccountSummary")}}>
              <IconIos name="ios-arrow-round-back" style={{fontSize:40,color:'white'}}></IconIos>
-           </TouchableOpacity>       
+           </TouchableOpacity>
           <TouchableOpacity style={styles.flipButton} onPress={this.toggleFlash.bind(this)}>
             <Text style={styles.flipText}> FLASH: {this.state.flash} </Text>
           </TouchableOpacity>
-          
+
         </View>
-        
-        
+
+
         <View
           style={{
             flex: 0.1,
@@ -146,7 +85,7 @@ export default class CameraScreen extends React.Component {
           }}
         >
          <TouchableOpacity onPress={this.takePicture.bind(this)}>
-          <Icon name="circle" style={{color: 'white',fontSize:55,}}></Icon>
+          <Icon name="camera" style={{color: 'white',fontSize:55,}}></Icon>
           </TouchableOpacity>
         </View>
       </RNCamera>
