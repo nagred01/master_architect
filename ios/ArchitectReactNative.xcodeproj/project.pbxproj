@@ -1144,11 +1144,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						SystemCapabilities = {
 							com.apple.Siri = {
 								enabled = 1;
@@ -1157,23 +1157,23 @@
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
 					7268EA73220250E70068F619 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						ProvisioningStyle = Automatic;
 					};
 					7268EA7D220250E80068F619 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = JZDSR7UB9J;
+						DevelopmentTeam = ZA6QNH62F6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1849,7 +1849,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1893,7 +1893,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1936,7 +1936,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1954,7 +1954,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative;
 				PRODUCT_NAME = ArchitectReactNative;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1968,7 +1968,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArchitectReactNative/ArchitectReactNative.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1986,7 +1986,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative;
 				PRODUCT_NAME = ArchitectReactNative;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2003,7 +2003,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2032,7 +2032,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ArchitectReactNativeV1-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ArchitectReactNative-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 4.0;
@@ -2052,7 +2052,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2080,7 +2080,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ArchitectReactNativeV1-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ArchitectReactNative-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 4.0;
@@ -2098,7 +2098,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2146,7 +2146,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2195,7 +2195,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ReactNativeArchitectUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2208,7 +2208,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1.ReactNativeArchitectUI;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative.ReactNativeArchitectUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -2229,7 +2229,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ReactNativeArchitectUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2241,7 +2241,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1.ReactNativeArchitectUI;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative.ReactNativeArchitectUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -2261,7 +2261,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ReactNativeArchitect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2274,7 +2274,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1.ReactNativeArchitect;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative.ReactNativeArchitect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -2295,7 +2295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = JZDSR7UB9J;
+				DEVELOPMENT_TEAM = ZA6QNH62F6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ReactNativeArchitect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2307,7 +2307,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNativeV1.ReactNativeArchitect;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ArchitectReactNative.ReactNativeArchitect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;

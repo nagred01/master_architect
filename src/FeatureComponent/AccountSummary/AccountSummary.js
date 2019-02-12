@@ -259,11 +259,8 @@ export default class AccountSummary extends Component {
           <TouchableOpacity onPress={()=>{this.props.navigation.navigate("CameraScreen")}}>
           <Text style={{fontSize:15,padding:5}}>Click For Camera</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{this.props.navigation.navigate("CameraRollImage")}}>
-          <Text style={{fontSize:15,padding:5}}>Click For Image</Text>
-          </TouchableOpacity>
         <Footer>
-          
+
         </Footer>
 
       </View>

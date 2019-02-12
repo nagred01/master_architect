@@ -9,7 +9,7 @@ import AppSettings from '../Settings/AppSettings';
 import { isIphoneX } from 'react-native-iphone-x-helper';
 
 export default class Footer extends Component {
-    
+
   render() {
     let iPhonexStyle;
     if(isIphoneX){iPhonexStyle = styles.padding1}
@@ -19,7 +19,7 @@ export default class Footer extends Component {
           <View style= {[styles.padding, iPhonexStyle]}>
             <IconButton color="green" label="Accounts" iconType="MaterialCommunityIcons" iconName={"account-box-multiple"} iconSize={3}> </IconButton>
           </View>
-          <View style= {[styles.padding, iPhonexStyle]}> 
+          <View style= {[styles.padding, iPhonexStyle]}>
             <TouchableOpacity onPress={()=>{this.props.navigation.navigate("CameraScreen")}}>
             <IconButton color="gray" label="Deposit" iconType="FontAwesome" iconName={"camera"} iconSize={3} > </IconButton>
            </TouchableOpacity>
@@ -32,7 +32,7 @@ export default class Footer extends Component {
           </View>
           <View style= {[styles.padding, iPhonexStyle]}>
             <IconButton color="gray" label="Spending" iconType="FontAwesome" iconName={"file-text"} iconSize={3}> </IconButton>
-          </View> 
+          </View>
         </View>
       </View>
     );
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   padding1 : {
     padding : responsiveHeight (1.5),
   },
-  container :{ 
+  container :{
     backgroundColor: AppSettings.backGroundColor
   }
 });
