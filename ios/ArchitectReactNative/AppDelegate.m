@@ -19,6 +19,12 @@
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
+  // Check if the app launched with any shortcuts
+  BOOL launchedFromShortcut = [launchOptions objectForKey:@"UIApplicationLaunchOptionsUserActivityDictionaryKey"] != nil;
+  // Add a boolean to the initialProperties to let the app know you got the initial shortcut
+  NSDictionary *initialProperties = @{ @"launchedFromShortcut":@(launchedFromShortcut) };
+
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ArchitectReactNative"
                                                initialProperties:nil

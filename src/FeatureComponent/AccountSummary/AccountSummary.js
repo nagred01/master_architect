@@ -42,7 +42,7 @@ type Props = {};
 type State = {
   shortcutInfo: ?any,
   shortcutActivityType: ?string,
-  addToSiriStyle: 0 | 1 | 2 | 3
+   //addToSiriStyle: 0 | 1 | 2 | 3
 };
 
 
@@ -137,45 +137,7 @@ export default class AccountSummary extends Component {
       shortcutActivityType: activityType
     });
   }
-
-  setupShortcut1() {
-    donateShortcut(opts1);
-  }
-
-
-  async clearShortcut1() {
-    try {
-      await clearShortcutsWithIdentifiers([
-        console.log("Clear ShortCut =>"),
-      ]);
-      alert("Cleared Shortcut 1 ");
-    } catch (e) {
-      alert("You're not running iOS 12!");
-    }
-  }
-
-  async clearShortcuts() {
-    try {
-      await clearAllShortcuts();
-      alert("Deleted all the shortcuts");
-    } catch (e) {
-      alert("You're not running iOS 12!");
-    }
-  }
-
-  swapSiriButtonTheme() {
-    const { addToSiriStyle } = this.state;
-
-    const styles = Object.keys(SiriButtonStyles).map(
-      key => SiriButtonStyles[key]
-    );
-    const index = styles.findIndex(style => style === addToSiriStyle);
-    if (index === styles.length - 1)
-      this.setState({ addToSiriStyle: styles[0] });
-    else this.setState({ addToSiriStyle: styles[index + 1] });
-  }
-
-
+  
   render() {
     const { shortcutInfo, shortcutActivityType, addToSiriStyle } = this.state;
     let isAndroid = Platform.OS == "android" ? true : false

@@ -43,7 +43,7 @@ export default class Footer extends Component {
                         <IconIos name="ios-arrow-round-back" style={{ fontSize: 40, color: 'black' }}></IconIos>
                     </TouchableOpacity>
                 </View>
-                
+
                 <ScrollView
                     contentContainerStyle={styles.scrollView}>
                     {
@@ -72,7 +72,7 @@ export default class Footer extends Component {
     }
 
 
-
+    
 }
 styles = StyleSheet.create({
     container: {
